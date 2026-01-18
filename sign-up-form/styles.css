@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    line-height: 1.5;
+}  
+body{
+    display: grid;
+    grid-auto-flow: column;
+    grid-templates-columns: 25% 75%;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+}
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+aside #bg-img{
+    display: block; 
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+aside #logo{
+    position: absolute;
+    height: 200px; 
+    z-index: 10;
+}
+.page-description{
+    padding: 105px 50px 55px 40px;
+}  
+.page-form fieldset{
+    padding: 35px 45px 45px 45px;
+    border-style: None;
+    box-shadow: 0.25px 0.25px 11.25px #9c9c9c;
+}
+.page-form .form-input{
+    padding-top: 20px;
+    width: 80%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-templates-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 60px;
+}
+.page-form .form-input label{
+    font-weight: 450;
+}
+
+.page-form .form-input label, input{
+    display: block;
+    width: 100%;
+}
+.page-form .form-input input{
+    border: 0.85px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 7.25px;
+}
+
+.page-form .form-input #password:invalid{
+    border-color: red;
+}
+
+.page-form .form-btn{
+    margin: 30px;
+}
+.page-form button{
+    color: white;
+    font-size: 16px;
+    border-style: None;
+    background-color: #9c9c9c;
+    padding: 15px 65px 15px 65px;
+    border-radius: 10px;
+}
+.page-form .form-btn p{
+    margin: 10px;
+}
